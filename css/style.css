@@ -44,24 +44,76 @@ header nav ul li a.atual{
   color: #e5e5e5;
 }
 header nav ul li :hover{
-  color: rgb(21, 180, 0);
+  color: rgb(255, 167, 193);
+  border-bottom: 1px solid black;
   transition: 3s;
 }
 header nav ul li a.atual:hover{
-  color: rgb(21, 180, 0);
+  color: rgb(255, 167, 193);
   transition: 3s;
 }
 /*====================================
-          main
+          banner
 ===================================*/
 
 section.banner{
-  display: flex;
-  margin: 0 auto 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr ;
+  margin:5vw auto 0 auto;
   width: 80%;
-  max-width: 900px;
+  max-width: 800px;
 }
 section.banner h1{
   width: 50%;
   font-size: 2.2rem;
+}
+section.banner h1 span{
+  font-weight: bold;
+}
+
+/*========================================================================= = = = = = = = = =  posts = = = = = = = = = = = = = = = = = = =        ===============================================================*/
+section.posts{
+    margin:5vw auto 0 auto;
+  width: 80%;
+  max-width: 800px;
+}
+section.posts > ul{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+section.posts > ul > li{
+  background-color: white;
+  border-radius: 5px;
+  border: 1px solid #f5f5f5;
+  box-shadow: 1px 1px 4px rgb(211, 210, 210);
+}
+section.posts > ul >li h2{
+  font-size: 2rem;
+  font-weight: bold;
+}
+section.posts > ul > li p{
+  color: #757575;
+  line-height: 1.58rem;
+}
+section.posts > ul > li ul{
+  display: flex;
+  gap: 20px;
+}
+section.posts > ul > li ul li{
+  border-radius: 20px;
+  padding: 5px;
+  background-color: #f5f5f5;
+  font-weight: bold;
+}/*========================================================================= = = = = = = = = = footer = = = = = = = = = = = = = = = = = = =        ===============================================================*/
+footer{
+  margin: 5vw auto 2vw auto;
+  width: 80%;
+  max-width: 1000px;
+  background-color: white;
+  border-radius: 20px;
+  text-align: center;
+  padding: 1px;
+  color: #C2C2C2;
+  border: 1px solid #e5e5e5;
 }
